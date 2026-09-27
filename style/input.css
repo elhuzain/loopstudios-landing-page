@@ -6,7 +6,7 @@
     --color-grey-200: #D8D8D8;
     --color-blue-100: #E5EAF1;
     --color-blue-50: #F6FAFF;
-    --background-image-gradient-overlay: linear-gradient(to bottom, #000000 0%, #000000 60%);
+    --background-image-gradient-overlay: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 60%) 100%);
 }
 
 @utility text-preset-1 {
@@ -72,4 +72,24 @@
 
 .img-desktop {
     @apply hidden md:block;
+}
+
+.creation-card {
+    @apply relative block;
+}
+
+.creation-card__image--desktop {
+    @apply hidden lg:block;
+}
+
+.creation-card__image--mobile {
+    @apply lg:hidden;
+}
+
+.creation-card__overlay {
+    @apply bg-gradient-overlay absolute inset-0 z-10;
+}
+
+.creation-card__title {
+    @apply absolute bottom-6 left-6 z-20 max-w-32 text-preset-5 text-white uppercase lg:max-w-46 lg:text-preset-4;
 }
