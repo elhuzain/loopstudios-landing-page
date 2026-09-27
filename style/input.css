@@ -66,6 +66,10 @@
     letter-spacing: 5px;
 }
 
+a {
+    @apply text-preset-6
+}
+
 .img-mobile {
     @apply md:hidden;
 }
