@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
 @theme {
     --color-grey-200: #D8D8D8;
@@ -64,4 +64,12 @@
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 5px;
+}
+
+.img-mobile {
+    @apply md:hidden;
+}
+
+.img-desktop {
+    @apply hidden md:block;
 }

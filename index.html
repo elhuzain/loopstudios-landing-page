@@ -25,11 +25,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="absolute top-0 w-full py-8 z-100">
+    <nav class="flex max-w-277.5 w-full mx-auto items-center justify-between w-full px-7">
       <a href="#"><img alt="Logo" src="images/logo.svg" /></a>
 
-      <ul>
+      <ul class="hidden lg:flex items-center gap-2 text-white">
         <li>
           <a href="#">About</a>
         </li>
@@ -46,15 +46,23 @@
           <a href="#">Support</a>
         </li>
       </ul>
+
+      <button class="lg:hidden">
+        <img alt="Open menu" src="./images/icon-hamburger.svg" />
+        <img class="hidden" alt="Close menu" src="./images/icon-close.svg" />
+      </button>
     </nav>
   </header>
 
   <main>
 
-    <section id="hero">
-      <img alt="" src="./images/mobile/image-hero.jpg" />
-      <div>
-        <h1>Immersive experiences that deliver</h1>
+    <section id="hero" class="relative flex items-center justify-center max-h-[900px] md:max-h-[650px] overflow-hidden">
+      <img alt="" src="./images/mobile/image-hero.jpg" class="object-cover w-full img-mobile" />
+      <img alt="" src="./images/desktop/image-hero.jpg" class="object-cover w-full img-desktop" />
+      <div class="absolute max-w-277.5 flex items-start justify-start w-full md:px-7">
+        <div class="max-w-[608px] border border-white px-6 py-4 mx-8 md:mx-0">
+          <h1 class="text-preset-3 lg:text-preset-1 text-white uppercase">Immersive experiences that deliver</h1>
+        </div>
       </div>
     </section>
 
