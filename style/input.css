@@ -94,6 +94,10 @@ a {
     @apply bg-gradient-overlay absolute inset-0 z-10;
 }
 
+.creation-card__overlay--bright {
+    @apply bg-white transition-opacity duration-300 opacity-0 group-hover:opacity-70 absolute inset-0 z-20
+}
+
 .creation-card__title {
-    @apply absolute bottom-6 left-6 z-20 max-w-32 text-preset-5 text-white uppercase lg:max-w-46 lg:text-preset-4;
+    @apply absolute bottom-6 duration-300 group-hover:text-black transition-colors left-6 z-20 max-w-32 text-preset-5 text-white uppercase lg:max-w-42 lg:text-preset-4;
 }

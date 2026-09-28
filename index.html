@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <header data-header class="absolute top-0 w-full py-8 lg:py-10 z-100">
+  <header data-header class="absolute top-0 w-full py-8 lg:py-16 z-100">
     <nav class="relative z-20 flex max-w-277.5 w-full mx-auto items-center justify-between px-7">
       <a href="#" class="relative z-20"><img alt="Loopstudios home" src="images/logo.svg" /></a>
 
@@ -48,7 +48,8 @@
         </li>
       </ul>
 
-      <button type="button" class="relative z-20 lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" data-menu-toggle>
+      <button type="button" class="relative z-20 lg:hidden" aria-controls="mobile-menu" aria-expanded="false"
+        aria-label="Open menu" data-menu-toggle>
         <img aria-hidden="true" data-menu-open-icon alt="" src="./images/icon-hamburger.svg" />
         <img aria-hidden="true" data-menu-close-icon class="hidden" alt="" src="./images/icon-close.svg" />
       </button>
@@ -72,7 +73,7 @@
       <img alt="" src="./images/desktop/image-hero.jpg" class="object-cover w-full img-desktop" />
       <div aria-hidden="true" class="absolute w-full h-full bg-black/40"></div>
       <div class="absolute max-w-277.5 flex items-start justify-start w-full md:px-7">
-        <div class="max-w-152 border border-white px-6 py-4 mx-8 md:mx-0">
+        <div class="max-w-152 border-2 md:translate-y-10 border-white px-6 md:px-10 py-4 pt-6 md:pt-8 mx-8 md:mx-0">
           <h1 class="text-preset-3 lg:text-preset-1 text-white uppercase">Immersive experiences that deliver</h1>
         </div>
       </div>
@@ -105,9 +106,10 @@
       <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 lg:col-span-2">
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-deep-earth.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-deep-earth.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">Deep earth</h3>
             </a>
@@ -115,9 +117,10 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-night-arcade.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-night-arcade.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">Night arcade</h3>
             </a>
@@ -125,9 +128,10 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-soccer-team.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-soccer-team.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">Soccer team VR</h3>
             </a>
@@ -135,19 +139,21 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-grid.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-grid.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
-              <h3 class="creation-card__title">The grid</h3>
+              <h3 class="creation-card__title">The<br/>grid</h3>
             </a>
           </article>
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-from-above.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-from-above.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">From up above VR</h3>
             </a>
@@ -155,9 +161,10 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-pocket-borealis.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-pocket-borealis.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">Pocket borealis</h3>
             </a>
@@ -165,9 +172,10 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-curiosity.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-curiosity.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">The curiosity</h3>
             </a>
@@ -175,9 +183,10 @@
         </li>
         <li>
           <article>
-            <a href="#" class="creation-card">
+            <a href="#" class="creation-card group">
               <img alt="" class="creation-card__image--desktop" src="./images/desktop/image-fisheye.jpg" />
               <img alt="" class="creation-card__image--mobile" src="./images/mobile/image-fisheye.jpg" />
+              <div aria-hidden="true" class="creation-card__overlay--bright"></div>
               <div aria-hidden="true" class="creation-card__overlay"></div>
               <h3 class="creation-card__title">Make it fisheye</h3>
             </a>
@@ -251,7 +260,8 @@
     </div>
 
     <div class="bg-white text-center">
-      Challenge by <a class="text-bold underline" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Challenge by <a class="text-bold underline" href="https://www.frontendmentor.io?ref=challenge">Frontend
+        Mentor</a>.
       Coded by <a class="text-bold underline" href="https://elhuzain.com">elhuzain</a>.
     </div>
   </footer>
